@@ -1,0 +1,51 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 
+</head>
+
+
+<body>
+<header>
+
+	 <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Lista de registros</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/cadastroCafe">Cadastre-se</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+
+
+<table class="container">
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>CPF</th>
+			<th>Item</th>
+		</tr>
+	
+	</thead>
+	
+	<tbody>
+	
+		<tr th:each="cadastro : ${cadastros}">
+			<td><span th:text="${cadastro.nome}"></span></td>
+			
+			<td><span th:text="${cadastro.cpf}"></span></td>
+			
+			<td><span th:text="${cadastro.item}"></span></td>
+		</tr>
+	</tbody>
+</table>
+
+ <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+
+</html>

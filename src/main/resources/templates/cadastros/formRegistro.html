@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://thymeleaf.org"
+		xmlns:layout="http://www.ulraq.net.nz/thymeleaf/layout">
+	<head>	
+	<title>MV Breakfast</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link type="text/css" rel="stylesheet" href="materialize/css/formregistro.css"/>
+		    <link type="text/css" rel="stylesheet" href="materialize/css/reset_normalize.css"  />
+		
+	</head>
+	
+	<body>
+	
+		  <form method="post" class="form__container">
+
+            <section class="logo">
+            <img src="materialize/imgs/logo_mv.png"/>
+            <h1>Breakfast</h1>
+
+            </section>
+            <div class="input_group">
+                <input name="nome" type="text" required="Preencha este campo."/>
+                <span>Meu nome</span>
+            </div>
+            <div class="input_group">
+                <input name="cpf" type="text" required="Preencha este campo."/>
+                <span>Meu CPF</span>
+            </div>
+
+            <div class="input_group">
+                <input name="item" type="text" required="Preencha este campo."/>
+                <span>O que eu vou levar...</span>
+            </div>
+
+            <div class="input_group">
+        	    <a><input type="submit" value="Confirmar"/></a>
+        	     <a  href="/registros"><input type="button" value="Acessar lista"/></a>
+                
+            </div>
+           
+
+        </form>
+	
+	</body>
+
+</html>
